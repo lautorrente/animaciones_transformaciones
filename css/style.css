@@ -23,9 +23,6 @@ body {
     padding: 5px;
     margin: 5px;
 }
-.nav__index ul li i {
-    margin: 5px;
-}
 .nav__index ul li {
     margin-right: 10px;
     
@@ -457,4 +454,16 @@ a {
 .main__aboutMe p:hover {
     background-color: #e1beb1;
     transform: translateX(-20px), translateY(-20px);
+}
+.menu span a:hover {
+    background: 
+        linear-gradient(
+            to right,
+            rgba(224, 175, 160, 1),
+            rgba(219, 167, 151, 1)
+          );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: all 400ms;
 }
