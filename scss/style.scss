@@ -11,17 +11,33 @@ header {
     nav {
         background-color: #8a817c;
         color: #fff;
-        margin: 12px;
+        margin: 8px;
         padding: 8px;
         font-size: 20px;
         font-family: 'Playfair Display', serif;
         font-family: 'Spline Sans', sans-serif;
         grid-area: "nav";
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            a {
+                img {
+                    width: 100px;
+                    height: 30px;
+                    object-fit: contain;
+                    margin-right: 700px;
+                }
+            } 
+        }
+            
         ul {
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
+            justify-content: flex-end;
             padding: 5px;
-            margin: 5px;
+            margin-top: 10px;
             li {
                 margin-right: 10px;
                 list-style: none;
@@ -144,6 +160,8 @@ header {
         font-size: 20px;
         text-align: center;
         ul {
+            display: flex;
+            flex-direction: column;
             li {
                 i {
                     margin: 5px;

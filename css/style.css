@@ -12,18 +12,31 @@ body {
 header nav {
   background-color: #8a817c;
   color: #fff;
-  margin: 12px;
+  margin: 8px;
   padding: 8px;
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-family: "Spline Sans", sans-serif;
   grid-area: "nav";
 }
+header nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header nav div a img {
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 700px;
+}
 header nav ul {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
   padding: 5px;
-  margin: 5px;
+  margin-top: 10px;
 }
 header nav ul li {
   margin-right: 10px;
@@ -77,6 +90,11 @@ header nav ul li a:hover {
   font-size: 15px;
   font-family: "Playfair Display", serif;
   font-family: "Spline Sans", sans-serif;
+}
+
+/*----------------------- 1ST SECTION --------------------------*/
+.section2_index h3 {
+  text-align: center;
 }
 
 /*----------------------- GRID CONTAINER --------------------------*/
@@ -145,6 +163,10 @@ header nav ul li a:hover {
     padding: 8px;
     font-size: 20px;
     text-align: center;
+  }
+  .nav__responsive--index ul {
+    display: flex;
+    flex-direction: column;
   }
   .nav__responsive--index ul li i {
     margin: 5px;
@@ -340,15 +362,15 @@ header nav ul li a:hover {
 }
 
 /* -------------- 1ST SECTION ---------------- */
-.section1_aboutMe h3 {
+.section1__aboutMe h3 {
   background-color: #e0afa0;
   color: #f4f3ee;
   border: 2px solid #0a0908;
   text-align: center;
 }
-.section1_aboutMe div {
+.section1__aboutMe div {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 20px;
 }
